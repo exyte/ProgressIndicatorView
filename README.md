@@ -3,7 +3,7 @@
 
 <p><h1 align="left">ProgressIndicatorView</h1></p>
 
-<p><h4>A number of preset loading indicators created with SwiftUI</h4></p>
+<p><h4>A number of preset progress indicators created with SwiftUI</h4></p>
 
 ___
 
@@ -15,11 +15,11 @@ ___
 <a href="https://exyte.com/contacts"><img src="https://i.imgur.com/vGjsQPt.png" width="134" height="34"></a> <a href="https://twitter.com/exyteHQ"><img src="https://i.imgur.com/DngwSn1.png" width="165" height="34"></a>
 
 </br></br>
-[![Travis CI](https://travis-ci.org/exyte/ActivityIndicatorView.svg?branch=master)](https://travis-ci.org/exyte/ProgressIndicatorView)
-[![Version](https://img.shields.io/cocoapods/v/ActivityIndicatorView.svg?style=flat)](http://cocoapods.org/pods/ProgressIndicatorView)
+[![Travis CI](https://travis-ci.org/exyte/ProgressIndicatorView.svg?branch=master)](https://travis-ci.org/exyte/ProgressIndicatorView)
+[![Version](https://img.shields.io/cocoapods/v/ProgressIndicatorView.svg?style=flat)](http://cocoapods.org/pods/ProgressIndicatorView)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-0473B3.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/ActivityIndicatorView.svg?style=flat)](http://cocoapods.org/pods/ProgressIndicatorView)
-[![Platform](https://img.shields.io/cocoapods/p/ActivityIndicatorView.svg?style=flat)](http://cocoapods.org/pods/ProgressIndicatorView)
+[![License](https://img.shields.io/cocoapods/l/ProgressIndicatorView.svg?style=flat)](http://cocoapods.org/pods/ProgressIndicatorView)
+[![Platform](https://img.shields.io/cocoapods/p/ProgressIndicatorView.svg?style=flat)](http://cocoapods.org/pods/ProgressIndicatorView)
 [![Twitter](https://img.shields.io/badge/Twitter-@exyteHQ-blue.svg?style=flat)](http://twitter.com/exyteHQ)
 
 # Usage
