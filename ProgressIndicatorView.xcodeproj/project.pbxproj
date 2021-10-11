@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A76D5A2E270EE55D00A26544 /* ProgressIndicatorView.docc in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A2D270EE55D00A26544 /* ProgressIndicatorView.docc */; };
-		A76D5A2F270EE55D00A26544 /* ProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D5A2C270EE55D00A26544 /* ProgressIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7179C6327101DED00AAFB3A /* DashBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7179C6227101DED00AAFB3A /* DashBarView.swift */; };
+		A76D5A38270EE61B00A26544 /* ProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */; };
+		A76D5A3A270EE6AE00A26544 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */; };
+		A76D5A40270EE6D200A26544 /* ImpulseBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */; };
+		A76D5A41270EE6D200A26544 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3D270EE6D200A26544 /* CircleView.swift */; };
+		A76D5A42270EE6D200A26544 /* DefaultSectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3E270EE6D200A26544 /* DefaultSectorView.swift */; };
+		A76D5A43270EE6D200A26544 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3F270EE6D200A26544 /* BarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7179C6227101DED00AAFB3A /* DashBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBarView.swift; sourceTree = "<group>"; };
 		A76D5A29270EE55D00A26544 /* ProgressIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A76D5A2C270EE55D00A26544 /* ProgressIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressIndicatorView.h; sourceTree = "<group>"; };
-		A76D5A2D270EE55D00A26544 /* ProgressIndicatorView.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ProgressIndicatorView.docc; sourceTree = "<group>"; };
+		A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressIndicatorView.h; sourceTree = "<group>"; };
+		A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulseBarView.swift; sourceTree = "<group>"; };
+		A76D5A3D270EE6D200A26544 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		A76D5A3E270EE6D200A26544 /* DefaultSectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSectorView.swift; sourceTree = "<group>"; };
+		A76D5A3F270EE6D200A26544 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +41,7 @@
 		A76D5A1F270EE55D00A26544 = {
 			isa = PBXGroup;
 			children = (
-				A76D5A2B270EE55D00A26544 /* ProgressIndicatorView */,
+				A76D5A36270EE61B00A26544 /* Source */,
 				A76D5A2A270EE55D00A26544 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,13 +54,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A76D5A2B270EE55D00A26544 /* ProgressIndicatorView */ = {
+		A76D5A36270EE61B00A26544 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A76D5A2C270EE55D00A26544 /* ProgressIndicatorView.h */,
-				A76D5A2D270EE55D00A26544 /* ProgressIndicatorView.docc */,
+				A76D5A3B270EE6C000A26544 /* Indicators */,
+				A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */,
+				A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */,
 			);
-			path = ProgressIndicatorView;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A76D5A3B270EE6C000A26544 /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				A76D5A3F270EE6D200A26544 /* BarView.swift */,
+				A76D5A3D270EE6D200A26544 /* CircleView.swift */,
+				A76D5A3E270EE6D200A26544 /* DefaultSectorView.swift */,
+				A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */,
+				A7179C6227101DED00AAFB3A /* DashBarView.swift */,
+			);
+			path = Indicators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,7 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76D5A2F270EE55D00A26544 /* ProgressIndicatorView.h in Headers */,
+				A76D5A38270EE61B00A26544 /* ProgressIndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +116,11 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Exyte;
 				TargetAttributes = {
 					A76D5A28270EE55D00A26544 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -132,7 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76D5A2E270EE55D00A26544 /* ProgressIndicatorView.docc in Sources */,
+				A7179C6327101DED00AAFB3A /* DashBarView.swift in Sources */,
+				A76D5A41270EE6D200A26544 /* CircleView.swift in Sources */,
+				A76D5A40270EE6D200A26544 /* ImpulseBarView.swift in Sources */,
+				A76D5A42270EE6D200A26544 /* DefaultSectorView.swift in Sources */,
+				A76D5A3A270EE6AE00A26544 /* ProgressIndicatorView.swift in Sources */,
+				A76D5A43270EE6D200A26544 /* BarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +294,7 @@
 		A76D5A33270EE55D00A26544 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -284,6 +315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,6 +324,7 @@
 		A76D5A34270EE55D00A26544 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
