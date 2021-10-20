@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "ProgressIndicatorView"
   s.version          = "0.0.1"
-  s.summary          = "A number of preset loading indicators created with SwiftUI."
+  s.summary          = "A number of preset progress indicators created with SwiftUI."
 
   s.homepage         = 'https://github.com/exyte/ProgressIndicatorView.git'
   s.license          = 'MIT'
