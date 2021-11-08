@@ -1,5 +1,5 @@
 <img src="https://github.com/exyte/ProgressIndicatorView/blob/master/Assets/header.png">
-<img align="right" src="https://raw.githubusercontent.com/exyte/ProgressIndicatorView/master/Assets/demo.gif" width="480" />
+<img align="right" src="https://raw.githubusercontent.com/exyte/ProgressIndicatorView/master/Assets/demo.gif" width="250" />
 
 <p><h1 align="left">ProgressIndicatorView</h1></p>
 
