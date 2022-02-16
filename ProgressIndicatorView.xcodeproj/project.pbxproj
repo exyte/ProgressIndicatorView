@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7179C6327101DED00AAFB3A /* DashBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7179C6227101DED00AAFB3A /* DashBarView.swift */; };
-		A76D5A38270EE61B00A26544 /* ProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */; };
+		A76D5A38270EE61B00A26544 /* ProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A76D5A3A270EE6AE00A26544 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */; };
 		A76D5A40270EE6D200A26544 /* ImpulseBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */; };
 		A76D5A41270EE6D200A26544 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3D270EE6D200A26544 /* CircleView.swift */; };
