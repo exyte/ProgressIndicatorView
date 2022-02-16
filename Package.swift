@@ -3,10 +3,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "ProgressIndicatorView",
+    name: "",
     platforms: [
         .macOS(.v11),
-        .iOS(.v15),
+        .iOS(.v14),
         .watchOS(.v7),
         .tvOS(.v14)
     ],
