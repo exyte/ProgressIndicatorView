@@ -5,10 +5,10 @@ import PackageDescription
 let package = Package(
     name: "ProgressIndicatorView",
     platforms: [
-        .macOS(.v11),
-        .iOS(.v15),
-        .watchOS(.v7),
-        .tvOS(.v14)
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .watchOS(.v6),
+        .tvOS(.v13)
     ],
     products: [
         .library(
@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .target(
             name: "ProgressIndicatorView",
-            path: "Source"
+            path: "Sources"
         )
     ],
     swiftLanguageVersions: [.v5]

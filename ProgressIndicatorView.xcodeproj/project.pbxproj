@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7179C6327101DED00AAFB3A /* DashBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7179C6227101DED00AAFB3A /* DashBarView.swift */; };
-		A76D5A38270EE61B00A26544 /* ProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */; };
-		A76D5A3A270EE6AE00A26544 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */; };
-		A76D5A40270EE6D200A26544 /* ImpulseBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */; };
-		A76D5A41270EE6D200A26544 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3D270EE6D200A26544 /* CircleView.swift */; };
-		A76D5A42270EE6D200A26544 /* DefaultSectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3E270EE6D200A26544 /* DefaultSectorView.swift */; };
-		A76D5A43270EE6D200A26544 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A3F270EE6D200A26544 /* BarView.swift */; };
+		5BE8401527DF557F00858CC7 /* DefaultSectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8400E27DF557F00858CC7 /* DefaultSectorView.swift */; };
+		5BE8401627DF557F00858CC7 /* DashBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8400F27DF557F00858CC7 /* DashBarView.swift */; };
+		5BE8401727DF557F00858CC7 /* ImpulseBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8401027DF557F00858CC7 /* ImpulseBarView.swift */; };
+		5BE8401827DF557F00858CC7 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8401127DF557F00858CC7 /* BarView.swift */; };
+		5BE8401927DF557F00858CC7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8401227DF557F00858CC7 /* CircleView.swift */; };
+		5BE8401A27DF557F00858CC7 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8401327DF557F00858CC7 /* ProgressIndicatorView.swift */; };
+		5BE8401B27DF557F00858CC7 /* ProgressIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE8401427DF557F00858CC7 /* ProgressIndicatorView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A7179C6227101DED00AAFB3A /* DashBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBarView.swift; sourceTree = "<group>"; };
+		5BE8400E27DF557F00858CC7 /* DefaultSectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSectorView.swift; sourceTree = "<group>"; };
+		5BE8400F27DF557F00858CC7 /* DashBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBarView.swift; sourceTree = "<group>"; };
+		5BE8401027DF557F00858CC7 /* ImpulseBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulseBarView.swift; sourceTree = "<group>"; };
+		5BE8401127DF557F00858CC7 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		5BE8401227DF557F00858CC7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5BE8401327DF557F00858CC7 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		5BE8401427DF557F00858CC7 /* ProgressIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressIndicatorView.h; sourceTree = "<group>"; };
 		A76D5A29270EE55D00A26544 /* ProgressIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressIndicatorView.h; sourceTree = "<group>"; };
-		A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
-		A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulseBarView.swift; sourceTree = "<group>"; };
-		A76D5A3D270EE6D200A26544 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		A76D5A3E270EE6D200A26544 /* DefaultSectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSectorView.swift; sourceTree = "<group>"; };
-		A76D5A3F270EE6D200A26544 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,10 +38,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BE8400C27DF557F00858CC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5BE8400D27DF557F00858CC7 /* Indicators */,
+				5BE8401327DF557F00858CC7 /* ProgressIndicatorView.swift */,
+				5BE8401427DF557F00858CC7 /* ProgressIndicatorView.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5BE8400D27DF557F00858CC7 /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				5BE8400E27DF557F00858CC7 /* DefaultSectorView.swift */,
+				5BE8400F27DF557F00858CC7 /* DashBarView.swift */,
+				5BE8401027DF557F00858CC7 /* ImpulseBarView.swift */,
+				5BE8401127DF557F00858CC7 /* BarView.swift */,
+				5BE8401227DF557F00858CC7 /* CircleView.swift */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
 		A76D5A1F270EE55D00A26544 = {
 			isa = PBXGroup;
 			children = (
-				A76D5A36270EE61B00A26544 /* Source */,
+				5BE8400C27DF557F00858CC7 /* Sources */,
 				A76D5A2A270EE55D00A26544 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,28 +76,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A76D5A36270EE61B00A26544 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A76D5A3B270EE6C000A26544 /* Indicators */,
-				A76D5A39270EE6AE00A26544 /* ProgressIndicatorView.swift */,
-				A76D5A37270EE61B00A26544 /* ProgressIndicatorView.h */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		A76D5A3B270EE6C000A26544 /* Indicators */ = {
-			isa = PBXGroup;
-			children = (
-				A76D5A3F270EE6D200A26544 /* BarView.swift */,
-				A76D5A3D270EE6D200A26544 /* CircleView.swift */,
-				A76D5A3E270EE6D200A26544 /* DefaultSectorView.swift */,
-				A76D5A3C270EE6D200A26544 /* ImpulseBarView.swift */,
-				A7179C6227101DED00AAFB3A /* DashBarView.swift */,
-			);
-			path = Indicators;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76D5A38270EE61B00A26544 /* ProgressIndicatorView.h in Headers */,
+				5BE8401B27DF557F00858CC7 /* ProgressIndicatorView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,12 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7179C6327101DED00AAFB3A /* DashBarView.swift in Sources */,
-				A76D5A41270EE6D200A26544 /* CircleView.swift in Sources */,
-				A76D5A40270EE6D200A26544 /* ImpulseBarView.swift in Sources */,
-				A76D5A42270EE6D200A26544 /* DefaultSectorView.swift in Sources */,
-				A76D5A3A270EE6AE00A26544 /* ProgressIndicatorView.swift in Sources */,
-				A76D5A43270EE6D200A26544 /* BarView.swift in Sources */,
+				5BE8401A27DF557F00858CC7 /* ProgressIndicatorView.swift in Sources */,
+				5BE8401527DF557F00858CC7 /* DefaultSectorView.swift in Sources */,
+				5BE8401827DF557F00858CC7 /* BarView.swift in Sources */,
+				5BE8401627DF557F00858CC7 /* DashBarView.swift in Sources */,
+				5BE8401927DF557F00858CC7 /* CircleView.swift in Sources */,
+				5BE8401727DF557F00858CC7 /* ImpulseBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
