@@ -111,3 +111,5 @@ github "Exyte/ProgressIndicatorView"
 [ActivityIndicatorView](https://github.com/exyte/ActivityIndicatorView) - A number of animated loading indicators      
 [SVGView](https://github.com/exyte/SVGView) - SVG parser    
 [LiquidSwipe](https://github.com/exyte/LiquidSwipe) - Liquid navigation animation    
+
+@@include[OtherLibraries.md](OtherLibraries.md)

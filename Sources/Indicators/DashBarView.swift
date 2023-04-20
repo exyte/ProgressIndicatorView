@@ -20,7 +20,7 @@ struct DashBarView: View {
         GeometryReader { geometry in
             let itemWidth = widthForItem(fullWidth: geometry.size.width)
             HStack(spacing: spacing) {
-                ForEach(0..<numberOfItems) { index in
+                ForEach(0..<numberOfItems, id: \.self) { index in
                     DashBarItemView(
                         backgroundColor: backgroundColor,
                         needToFill: progress > (1 / CGFloat(numberOfItems) * CGFloat(index)),

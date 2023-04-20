@@ -1,5 +1,5 @@
 PODS:
-  - ProgressIndicatorView (0.0.1)
+  - ProgressIndicatorView (0.0.2)
 
 DEPENDENCIES:
   - ProgressIndicatorView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ProgressIndicatorView: 8032bc4a860c056a178899ee7fc50fdde1010c88
+  ProgressIndicatorView: ccb8e2b188c0bd33a6fb792172d70b13982cd7b8
 
 PODFILE CHECKSUM: 975d16e862abaa9d708f17641a7379ef951d0ca3
 

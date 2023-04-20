@@ -18,7 +18,7 @@ struct DefaultSectorView: View {
     public var body: some View {
         GeometryReader { geometry in
             Group {
-                ForEach(0..<count) { index in
+                ForEach(0..<count, id: \.self) { index in
                     DefaultSectorItemView(index: index, count: count, size: geometry.size)
                         .opacity(progress * 2.0 - CGFloat(index) * 1 / CGFloat(count) - 0.1)
                         .animation(.linear, value: progress)
