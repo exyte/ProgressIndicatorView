@@ -3,26 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13EE15262AE11A37001AC63A /* ProgressIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 13EE15252AE11A37001AC63A /* ProgressIndicatorView */; };
 		A76D5A51270EE72300A26544 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A50270EE72300A26544 /* ExampleApp.swift */; };
 		A76D5A53270EE72300A26544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A52270EE72300A26544 /* ContentView.swift */; };
 		A76D5A55270EE72500A26544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76D5A54270EE72500A26544 /* Assets.xcassets */; };
 		A76D5A58270EE72500A26544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76D5A57270EE72500A26544 /* Preview Assets.xcassets */; };
-		D06F86197595E6C2064D1150 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33B8892B52568A954E16A71 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C9FB3B62D9479C4686E5125 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A76D5A4D270EE72300A26544 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76D5A50270EE72300A26544 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		A76D5A52270EE72300A26544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A76D5A54270EE72500A26544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76D5A57270EE72500A26544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CC7D7D8AF7F192B8A86F3B3B /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		F33B8892B52568A954E16A71 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,37 +27,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D06F86197595E6C2064D1150 /* Pods_Example.framework in Frameworks */,
+				13EE15262AE11A37001AC63A /* ProgressIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02306536A13834F6C5972A5E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3C9FB3B62D9479C4686E5125 /* Pods-Example.debug.xcconfig */,
-				CC7D7D8AF7F192B8A86F3B3B /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		16E51A056747E677DCA266E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F33B8892B52568A954E16A71 /* Pods_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A76D5A44270EE72300A26544 = {
 			isa = PBXGroup;
 			children = (
 				A76D5A4F270EE72300A26544 /* Example */,
 				A76D5A4E270EE72300A26544 /* Products */,
-				02306536A13834F6C5972A5E /* Pods */,
-				16E51A056747E677DCA266E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,17 +76,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A76D5A5B270EE72500A26544 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				4AC6DDFBBF698B2B192B0950 /* [CP] Check Pods Manifest.lock */,
 				A76D5A49270EE72300A26544 /* Sources */,
 				A76D5A4A270EE72300A26544 /* Frameworks */,
 				A76D5A4B270EE72300A26544 /* Resources */,
-				279AEC5FA27B2194E24469C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				13EE15252AE11A37001AC63A /* ProgressIndicatorView */,
+			);
 			productName = Example;
 			productReference = A76D5A4D270EE72300A26544 /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +117,9 @@
 				Base,
 			);
 			mainGroup = A76D5A44270EE72300A26544;
+			packageReferences = (
+				13EE15242AE11A37001AC63A /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = A76D5A4E270EE72300A26544 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,48 +140,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		279AEC5FA27B2194E24469C5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AC6DDFBBF698B2B192B0950 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A76D5A49270EE72300A26544 /* Sources */ = {
@@ -332,7 +272,6 @@
 		};
 		A76D5A5C270EE72500A26544 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C9FB3B62D9479C4686E5125 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,7 +302,6 @@
 		};
 		A76D5A5D270EE72500A26544 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC7D7D8AF7F192B8A86F3B3B /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +352,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		13EE15242AE11A37001AC63A /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13EE15252AE11A37001AC63A /* ProgressIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProgressIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A76D5A45270EE72300A26544 /* Project object */;
 }

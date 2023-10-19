@@ -9,10 +9,29 @@
 import SwiftUI
 import ProgressIndicatorView
 
+struct ControlView: View {
+    @Binding var progress: CGFloat
+    @Binding var enableAutoProgress: Bool
+
+    var body: some View {
+        VStack(spacing: 20) {
+            HStack(spacing: 20) {
+                Text("Progess:")
+                Slider(value: $progress)
+            }
+            Toggle("Enable auto change progress", isOn: $enableAutoProgress)
+        }
+        .padding(20)
+        .tint(.red)
+        .foregroundColor(.red)
+    }
+}
+
 struct ContentView: View {
     
     @State private var showProgressIndicator: Bool = true
     @State private var progress: CGFloat = 0.0
+    @State private var enableAutoProgress: Bool = true
     @State private var progressForDefaultSector: CGFloat = 0.0
     
     private let timer = Timer.publish(every: 1 / 5, on: .main, in: .common).autoconnect()
@@ -53,7 +72,15 @@ struct ContentView: View {
                 Spacer()
             }
         }
+        .overlay(
+            ControlView(
+                progress: $progress,
+                enableAutoProgress: $enableAutoProgress
+            ),
+            alignment: .bottom
+        )
         .onReceive(timer) { _ in
+            guard enableAutoProgress else { return }
             switch progress {
             case ...0.3, 0.4...0.6:
                 progress += 1 / 30
