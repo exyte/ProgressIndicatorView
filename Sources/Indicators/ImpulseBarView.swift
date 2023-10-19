@@ -9,10 +9,12 @@
 import SwiftUI
 
 struct ImpulseBarView: View {
-    
+
     @Binding var progress: CGFloat
     let backgroundColor: Color
-    
+
+    @State private var size: CGSize = .zero
+    @State private var progressWidth: CGFloat = 0
     @State private var impulseOffset: CGFloat = -200.0 // x2 gradientWidth
     private let animation: Animation = .linear(duration: 1.5).repeatForever(autoreverses: false)
     private let gradientWidth: CGFloat = 100.0
@@ -29,53 +31,79 @@ struct ImpulseBarView: View {
             .white.opacity(0.0)
         ]
     )
-    
+
     var body: some View {
-        GeometryReader { geometry in
-            let width = min(max(geometry.size.width * progress, 0), geometry.size.width)
-            HStack(spacing: -geometry.size.height / 2) {
-                Capsule()
-                    .animation(.easeIn, value: progress)
-                    .frame(width: width)
-                    .overlay(
-                        LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing)
-                            .frame(width: gradientWidth)
-                            .offset(x: impulseOffset)
-                    )
-                    .clipped()
-                
-                CustomRoundRect(widthOfProgressShape: width)
-                    .animation(.easeIn, value: progress)
-                    .foregroundColor(backgroundColor)
-            }
-            .onAppear {
+        Capsule()
+            .fill(backgroundColor)
+            .sizeGetter($size)
+            .overlay(
+                CapsuleProgressView(width: progressWidth, height: size.height)
+            )
+            .overlay(gradientView)
+            .animation(.easeIn, value: progressWidth)
+            .onChange(of: size) { size in
+                progressWidth = fmin(fmax(size.width * progress, 0), size.width)
                 withAnimation(animation) {
-                    impulseOffset = geometry.size.width
+                    impulseOffset = size.width + 200
                 }
             }
+            .onChange(of: progress) { progress in
+                progressWidth = fmin(fmax(size.width * progress, 0), size.width)
+            }
+    }
+
+    private var gradientView: some View {
+        HStack {
+            LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing)
+                .frame(width: gradientWidth)
+                .offset(x: impulseOffset)
+
+            Spacer(minLength: 0)
+        }
+        .mask(CapsuleProgressView(width: progressWidth, height: size.height))
+    }
+}
+
+struct CapsuleProgressView: View {
+    let width: CGFloat
+    let height: CGFloat
+
+    var body: some View {
+        HStack {
+            Capsule()
+                .frame(width: width < height ? height : width)
+                .mask(
+                    Capsule()
+                        .frame(width: width < height ? height : width)
+                        .offset(x: width < height ? width - height : 0)
+                )
+            Spacer(minLength: 0)
         }
     }
 }
 
-struct CustomRoundRect: Shape {
-    
-    let widthOfProgressShape: CGFloat
-    
-    func path(in rect: CGRect) -> Path {
-        Path { path in
-            let width = rect.size.width
-            let height = rect.size.height
-            let halfHeight = height / 2
-            
-            if halfHeight > widthOfProgressShape {
-                path.addPath(Capsule().path(in: rect))
-            } else {
-                path.move(to: .init(x: 0.0, y: 0.0))
-                path.addLine(to: .init(x: width - halfHeight, y: 0.0))
-                path.addArc(center: .init(x: width - halfHeight, y: halfHeight), radius: halfHeight, startAngle: .radians( -.pi / 2), endAngle: .radians(.pi / 2), clockwise: false)
-                path.addLine(to: .init(x: 0.0, y: height))
-                path.addArc(center: .init(x: 0.0, y: halfHeight), radius: halfHeight, startAngle: .radians( .pi / 2), endAngle: .radians(-.pi / 2), clockwise: true)
+
+struct ImpulseBarView_Preview: PreviewProvider {
+    static let items: [CGFloat] = [0, 0.2, 0.5, 0.8, 1]
+
+    static var previews: some View {
+        VStack {
+            ForEach(items, id: \.self) { item in
+                ImpulseBarView(
+                    progress: .constant(item),
+                    backgroundColor: .gray
+                )
+                .frame(height: 10)
+                .foregroundColor(.blue)
+
+                ImpulseBarView(
+                    progress: .constant(item),
+                    backgroundColor: .gray
+                )
+                .frame(height: 10)
+                .foregroundColor(.red)
             }
         }
+        .padding(.horizontal, 30)
     }
 }
