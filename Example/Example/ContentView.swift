@@ -21,8 +21,7 @@ struct ControlView: View {
             }
             Toggle("Enable auto change progress", isOn: $enableAutoProgress)
         }
-        .padding(.vertical, 20)
-        .padding(.horizontal, 20)
+        .padding(20)
         .tint(.red)
         .foregroundColor(.red)
     }

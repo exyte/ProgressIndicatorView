@@ -44,7 +44,7 @@ struct ImpulseBarView: View {
             .onChange(of: size) { size in
                 progressWidth = fmin(fmax(size.width * progress, 0), size.width)
                 withAnimation(animation) {
-                    impulseOffset = size.width + 200
+                    impulseOffset = size.width
                 }
             }
             .onChange(of: progress) { progress in
@@ -53,14 +53,11 @@ struct ImpulseBarView: View {
     }
 
     private var gradientView: some View {
-        HStack {
-            LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing)
-                .frame(width: gradientWidth)
-                .offset(x: impulseOffset)
-
-            Spacer(minLength: 0)
-        }
-        .mask(CapsuleProgressView(width: progressWidth, height: size.height))
+        LinearGradient(gradient: gradient, startPoint: .leading, endPoint: .trailing)
+            .frame(width: gradientWidth)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .offset(x: impulseOffset)
+            .mask(CapsuleProgressView(width: progressWidth, height: size.height))
     }
 }
 
@@ -69,16 +66,14 @@ struct CapsuleProgressView: View {
     let height: CGFloat
 
     var body: some View {
-        HStack {
-            Capsule()
-                .frame(width: width < height ? height : width)
-                .mask(
-                    Capsule()
-                        .frame(width: width < height ? height : width)
-                        .offset(x: width < height ? width - height : 0)
-                )
-            Spacer(minLength: 0)
-        }
+        Capsule()
+            .frame(width: width < height ? height : width)
+            .mask(
+                Capsule()
+                    .frame(width: width < height ? height : width)
+                    .offset(x: width < height ? width - height : 0)
+            )
+            .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
