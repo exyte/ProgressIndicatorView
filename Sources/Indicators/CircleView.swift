@@ -20,7 +20,7 @@ struct CircleView: View {
             ZStack(alignment: .leading) {
                 Arc(startAngle: .radians(-.pi / 2), endAngle: .radians(.pi * 3 / 2))
                     .stroke(backgroundColor, style: .init(lineWidth: lineWidth, lineCap: .butt, lineJoin: .miter))
-                Arc(startAngle: .radians(-.pi / 2), endAngle: .radians(.pi * 3 / 2 * progress))
+                Arc(startAngle: .radians(-.pi / 2), endAngle: .radians(-.pi / 2 + .pi * 3 / 2 * progress))
                     .stroke(strokeColor, style: .init(lineWidth: lineWidth, lineCap: .butt, lineJoin: .miter))
                     .animation(.easeIn, value: progress)
             }
