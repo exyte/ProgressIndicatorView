@@ -16,7 +16,7 @@ struct ControlView: View {
     var body: some View {
         VStack(spacing: 20) {
             HStack(spacing: 20) {
-                Text("Progess:")
+                Text("Progress:")
                 Slider(value: $progress)
             }
             Toggle("Enable auto change progress", isOn: $enableAutoProgress)

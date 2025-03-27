@@ -10,11 +10,11 @@
 
 <p><h4>A number of preset progress indicators created with SwiftUI</h4></p>
 
+![](https://img.shields.io/github/v/tag/exyte/ProgressIndicatorView?label=Version)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fexyte%2FProgressIndicatorView%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/exyte/ProgressIndicatorView)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fexyte%2FProgressIndicatorView%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/exyte/ProgressIndicatorView)
-[![SPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swiftpackageindex.com/exyte/ProgressIndicatorView)
-[![Cocoapods Compatible](https://img.shields.io/badge/cocoapods-Compatible-brightgreen.svg)](https://cocoapods.org/pods/ProgressIndicatorView)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg)](https://swiftpackageindex.com/exyte/ProgressIndicatorView)
+[![Cocoapods](https://img.shields.io/badge/Cocoapods-Deprecated%20after%201.0.0-yellow.svg)](https://cocoapods.org/pods/ProgressIndicatorView)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 
 # Usage
@@ -61,33 +61,19 @@ You may alter it with standard SwiftUI means like this:
 
 ## Examples
 
-To try out the ProgressIndicatorView examples:
-- Clone the repo `git clone git@github.com:exyte/ProgressIndicatorView.git`
-- Open terminal and run `cd <ProgressIndicatorViewRepo>/Example`
-- Run `pod install` to install all dependencies
-- Run `xed .` to open project in the Xcode
+To try the ProgressIndicatorView examples:
+- Clone the repo `https://github.com/exyte/ProgressIndicatorView.git`
+- Open `ProgressIndicatorViewExample.xcodeproj` in the Xcode
 - Try it!
 
 ## Installation
 
-### Swift Package Manager
+### [Swift Package Manager](https://swift.org/package-manager/)
 
 ```swift
 dependencies: [
     .package(url: "https://github.com/exyte/ProgressIndicatorView.git", from: "0.0.1")
 ]
-```
-
-### CocoaPods
-
-```ruby
-pod 'ProgressIndicatorView'
-```
-
-### Carthage
-
-```ogdl
-github "Exyte/ProgressIndicatorView"
 ```
 
 ## Requirements

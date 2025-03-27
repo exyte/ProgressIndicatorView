@@ -11,7 +11,6 @@
 		A76D5A51270EE72300A26544 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A50270EE72300A26544 /* ExampleApp.swift */; };
 		A76D5A53270EE72300A26544 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D5A52270EE72300A26544 /* ContentView.swift */; };
 		A76D5A55270EE72500A26544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76D5A54270EE72500A26544 /* Assets.xcassets */; };
-		A76D5A58270EE72500A26544 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76D5A57270EE72500A26544 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +18,6 @@
 		A76D5A50270EE72300A26544 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		A76D5A52270EE72300A26544 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A76D5A54270EE72500A26544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A76D5A57270EE72500A26544 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +35,7 @@
 		A76D5A44270EE72300A26544 = {
 			isa = PBXGroup;
 			children = (
-				A76D5A4F270EE72300A26544 /* Example */,
+				A76D5A4F270EE72300A26544 /* ProgressIndicatorViewExample */,
 				A76D5A4E270EE72300A26544 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,23 +48,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A76D5A4F270EE72300A26544 /* Example */ = {
+		A76D5A4F270EE72300A26544 /* ProgressIndicatorViewExample */ = {
 			isa = PBXGroup;
 			children = (
 				A76D5A50270EE72300A26544 /* ExampleApp.swift */,
 				A76D5A52270EE72300A26544 /* ContentView.swift */,
 				A76D5A54270EE72500A26544 /* Assets.xcassets */,
-				A76D5A56270EE72500A26544 /* Preview Content */,
 			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		A76D5A56270EE72500A26544 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A76D5A57270EE72500A26544 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = ProgressIndicatorViewExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A76D5A48270EE72300A26544 /* Build configuration list for PBXProject "Example" */;
+			buildConfigurationList = A76D5A48270EE72300A26544 /* Build configuration list for PBXProject "ProgressIndicatorViewExample" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A76D5A58270EE72500A26544 /* Preview Assets.xcassets in Resources */,
 				A76D5A55270EE72500A26544 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +200,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -266,6 +255,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -277,7 +267,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
 				DEVELOPMENT_TEAM = FZXCM5CJ7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -292,10 +281,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.ProgressIndicatorViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +299,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
 				DEVELOPMENT_TEAM = FZXCM5CJ7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,10 +313,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exyte.ProgressIndicatorViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -333,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A76D5A48270EE72300A26544 /* Build configuration list for PBXProject "Example" */ = {
+		A76D5A48270EE72300A26544 /* Build configuration list for PBXProject "ProgressIndicatorViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A76D5A59270EE72500A26544 /* Debug */,
