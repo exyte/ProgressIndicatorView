@@ -38,7 +38,7 @@ You may alter it with standard SwiftUI means like this:
 `default` - progress indicator looks like default iOS UIActivityIndicator.  
 `bar` - line progress bar with a Binding<CGFloat> progress value and background color, default is `Color.clear`:
   ```swift
-   ProgressIndicatorView(isVisible: $showProgressIndicator, type: .bar(progress: $progress, backgroundColor: .gray)
+   ProgressIndicatorView(isVisible: $showProgressIndicator, type: .bar(progress: $progress, backgroundColor: .gray))
        .frame(height: 8.0)
        .foregroundColor(.red)
    ```
